@@ -24,11 +24,29 @@
 <body>
 <!--ヘッダー-->  
 
+
+
+<!--classの付け方
+<section class="about">　Block： 大枠となる独立した要素
+  <div class="about__item">　Element：Block中の要素
+    <h2 class="about__item-ttl">　　</h2>
+    <p class="about__item-txt">エレメントの中にエレメントは禁止</p>
+
+    <a href="#" class="about__item-link about__item-link--red">MORE</a>　Modifier：BlockやElementのスタイル
+  </div>
+</section>    -->
+
+
+    
 <!--トップページのメインビジュ--> 
 
 <main>
 
-    <section class="key_mess">
+<!--新卒ページ-->
+<div class="p-new-grad">
+
+    <div class="top-msg">
+      <section class="top-msg__txt">
         <h2>課題を構造から変えよう。
             <br>デザインの力を使い、
             <br>地域プロジェクトのプロとなる！
@@ -46,11 +64,15 @@
         <h3>そんなシビックテック・ラボで、
             <br>あなたも地域プロジェクトのプロになりませんか？
         </h3>
+      </section>
 
-    </section>
+      <div class="top-msg__img">
+        <img src="images/top_msg.png" alt="" class="top-msg__img-photo">
+      </div>
+    </div>
 
 <!--代表からのメッセージ--> 
-    <section class="ceo_mess">
+    <div class="ceo_mess">
 
         <div class="title">
             <h3>代表からのメッセージ</h3>
@@ -76,10 +98,10 @@
         </p>
         </div>
 
-    </section>
+    </div>
 
 <!--事業内容--> 
-    <section class="our_busi">
+    <section class="about">
 
         <div class="title">
             <h3>事業内容</h3>
@@ -204,6 +226,7 @@
      </div>
 </section>
 
+</div>
 
 </main>
 
