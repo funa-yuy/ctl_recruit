@@ -1,5 +1,47 @@
 /* 調整用スタイル */
 
+/*↓↓固定↓↓*/
+html{
+  font-size: 14px;
+  font-family: 'Hiragino Kaku Gothic ProN','游明朝','Yu Mincho','YuMincho',serif;
+  color: rgb(0, 0, 0);
+}
+
+*{  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font: 1vw; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=14px*/
+  line-height: 1.8; /*行間指定*/
+  letter-spacing: 0em;/*字間指定*/
+  background-size: 100% auto,auto ;
+}
+main{
+  align-items:center ;
+  margin: 0 auto;/*コンテンツ部分を真ん中に持ってくるための指定。widthを指定した上で、margin:0 auto を指定する。bodyには指定しない。意味ないから*/
+
+}
+
+img {vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
+} 
+
+li{
+list-style:none; /*箇条書きのマーカー（黒っぽち）を消す*/
+}
+
+ul{
+margin: 0;
+padding: 0;
+}
+
+div{
+  display: block;
+}
+
+/*↑↑ここまで固定↑↑*/
+
 
 
 a {
@@ -715,4 +757,58 @@ background-color: #33AFB2;
   width: 35%;
   height: auto;
   padding: 20px 0 0 0;
+}
+
+
+.container{
+  width: 1400px;
+}
+
+/**/
+
+.top-msg{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 140px 0;
+}
+
+.top-msg__txt {
+  float: left;
+width: 849px;
+align-items: flex-start;
+gap: 10px;
+}
+
+.top-msg__txt p, h2, h3{
+  padding: 0px 0px 0px 60px;
+}
+
+.top-msg__txt h2{
+font-size: 48px;
+line-height: 75px; /* 156.25% */
+letter-spacing: 2.4px;
+padding: 0px 0px 0px 60px;
+}
+
+.top-msg__txt p{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 60px; /* 250% */
+  padding: 30px 47px 50px 60px;
+  }
+
+.top-msg__txt h3{
+font-size: 30px;
+font-weight: 600;
+line-height: 60px; /* 200% */
+  }
+
+
+.top-msg__photo-img{
+  width: 100%;
+  height: auto;
+  box-shadow: 22px 21px 0  #7FCA34;
+  
 }
