@@ -288,8 +288,9 @@ padding: 80px 0 30px 0;
 
 
 @media screen and (max-width: 1600px) {
-  .new-main-visual__img {
+  .new-main-visual__img , .entry , .cont-inner {
     width: 1600px;
+
   }
   .button-new-mid{
     width: 1600px;
