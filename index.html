@@ -24,6 +24,33 @@
 <body>
 <!--ヘッダー-->  
 
+<header class="header">
+    <div class="header__inner">
+  
+      <div class="header__logo header-logo">
+        <a href="#">
+          <img src="images/header__logo.png" alt="ロゴ画像">
+        </a>
+    </div>
+
+      <nav class="header__nav nav" id="js-nav">
+        <ul class="nav__items nav-items" id="rink">
+          <li class="nav-items__item" ><a href="#">Top</a></li>
+          <li class="nav-items__item" ><a href="#">About</a></li>
+          <li class="nav-items__item" ><a href="#">Contents</a></li>
+          <li class="nav-items__item"  ><a href="#">Access</a></li>
+        <li class="nav-items__item" ><a href="#">Attention</a></li>
+        </ul>
+      </nav>
+
+      <button class="header__hamburger hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+    </div>
+</header>
+
 
 
 <!--classの付け方
@@ -45,6 +72,22 @@
 <!--新卒ページ-->
 <div class="p-new-grad">
 
+<!--新卒メインビジュ-->
+<div class="new-main-visual">
+</div>
+
+<!--新卒・中途ボタン-->
+<div class="button-new-mid">
+    <div class="button-new">
+       <p>新卒向け</p>
+    </div>
+    <div class="button-mid">
+       <p>中途向け</p>
+    </div>
+</div>
+
+
+<!--トップメッセージ-->
     <div class="top-msg">
       <div class="top-msg__txt">
         <h2>課題を構造から変えよう。
@@ -80,25 +123,27 @@
             <img src="images/cont-heading__line.svg" alt="" class="cont-heading__line">
         </div>
 
+     <div class="ceo-msg__inner">
         <div class="ceo-msg__photo">
             <img src="images/ceo-msg.png" alt="" class="ceo-msg__photo-img">
-            <p>
+            <p class="ceo-msg__photo-text">
             一般社団法人シビックテック・ラボ　代表理事 市川博之  
             </p>
         </div>
 
-        <section class="ceo-msg__txt">
-            <h3 class="ceo-msg__keymsg">常に考え、
+        <div class="ceo-msg__txt">
+            <h3 class="ceo-msg__text-keymsg">常に考え、
                 <br>課題解決と価値創出を。
             </h3>
-            <p>
+            <p class="ceo-msg__txt-desc">
             学生時代、ボランティアや地域創生プロジェクトなどに参加したことはないだろうか？
-            いわばアマチュアだった学生時代。そこから”プロ”になるには、より規模の大きい、より複雑な課題にも取り組むことになる。
-            例えばシビックテックラボでは、自治体相手にプロジェクトを行うことが多くある。自治体は自分たちだけが良くなればいいわけではなく、市民を第一に考えながら多くの制約の中で課題解決をしなければならないのだ。
-            少しでも状況が違えば、答えは変わってくるはず。お客様とパートナーとして一緒に考え、ベストな解決策を見出していく必要がある。 
-            さぁ私たちと一緒に、より良い価値を創造していかないか？
+            <br>いわばアマチュアだった学生時代。そこから”プロ”になるには、より規模の大きい、より複雑な課題にも取り組むことになる。
+            <br>例えばシビックテックラボでは、自治体相手にプロジェクトを行うことが多くある。自治体は自分たちだけが良くなればいいわけではなく、市民を第一に考えながら多くの制約の中で課題解決をしなければならないのだ。
+            <br>少しでも状況が違えば、答えは変わってくるはず。お客様とパートナーとして一緒に考え、ベストな解決策を見出していく必要がある。 
+            <br>さぁ私たちと一緒に、より良い価値を創造していかないか？
             </p>
-        </section>
+        </div>
+    </div>
 
     </div>
 
@@ -214,20 +259,21 @@
                 </div>
         
                 <div class="design-types-item-txt">
-                    <h4 class="esign-types-item__title item__title" style="border-left: 8px solid #7FCA34">
+                    <h4 class="design-types-item__title item__title">
                         サービスデザイナー
                     </h4>
                     <p class="design-types-item__desc">
                         シビックテック・ラボでは、デザインを用いて課題解決と価値創出ができる人材を募集しています。 特定の業務のみ行うのではなく、それぞれの得意分野・領域に応じた業務をしながら、新たな分野にもチャレンジする必要があります。また、代表やプロジェクトのサポート業務を行うこともあります。 
                     </p>
-        
-                    <div class="design-types-item__skill">
-                        <p>必要になるスキル
-                        <br>モノ、コトづくりが好きな人
-                        </p>
-                    </div>
-        
                 </div>
+
+                <div class="design-types-item__skill">
+                    <p>必要になるスキル
+                    <br>モノ、コトづくりが好きな人
+                    </p>
+                </div>
+        
+               
         </div>
 
         <div class="design-types-item design-types-item02">    
@@ -236,20 +282,21 @@
             </div>
     
             <div class="design-types-item-txt">
-                <h4 class="esign-types-item__title item__title" style="border-left: 8px solid #7FCA34">
+                <h4 class="design-types-item__title item__title">
                 UXデザイナー
                 </h4>
                 <p class="design-types-item__desc">
                     シビックテック・ラボでは、デザインを用いて課題解決と価値創出ができる人材を募集しています。 特定の業務のみ行うのではなく、それぞれの得意分野・領域に応じた業務をしながら、新たな分野にもチャレンジする必要があります。また、代表やプロジェクトのサポート業務を行うこともあります。 
                 </p>
-    
+            </div>
+
                 <div class="design-types-item__skill">
                     <p>必要になるスキル
                     <br>モノ、コトづくりが好きな人
                     </p>
                 </div>
     
-            </div>
+           
         </div>
 
         <div class="design-types-item design-types-item03">    
@@ -258,20 +305,21 @@
             </div>
     
             <div class="design-types-item-txt">
-                <h4 class="esign-types-item__title item__title" style="border-left: 8px solid #7FCA34">
+                <h4 class="design-types-item__title item__title">
                 ワークショップデザイナー
                 </h4>
                 <p class="design-types-item__desc">
                     シビックテック・ラボでは、デザインを用いて課題解決と価値創出ができる人材を募集しています。 特定の業務のみ行うのではなく、それぞれの得意分野・領域に応じた業務をしながら、新たな分野にもチャレンジする必要があります。また、代表やプロジェクトのサポート業務を行うこともあります。 
                 </p>
-    
+            </div>
+
                 <div class="design-types-item__skill">
                     <p>必要になるスキル
                     <br>モノ、コトづくりが好きな人
                     </p>
                 </div>
     
-            </div>
+            
         </div>
 
         <div class="design-types-item design-types-item04">    
@@ -280,20 +328,21 @@
             </div>
     
             <div class="design-types-item-txt">
-                <h4 class="esign-types-item__title item__title" style="border-left: 8px solid #7FCA34">
+                <h4 class="design-types-item__title item__title">
                 ビジュアルデザイナー
                 </h4>
                 <p class="design-types-item__desc">
                     シビックテック・ラボでは、デザインを用いて課題解決と価値創出ができる人材を募集しています。 特定の業務のみ行うのではなく、それぞれの得意分野・領域に応じた業務をしながら、新たな分野にもチャレンジする必要があります。また、代表やプロジェクトのサポート業務を行うこともあります。 
                 </p>
-    
+            </div>
+
                 <div class="design-types-item__skill">
                     <p>必要になるスキル
                     <br>モノ、コトづくりが好きな人
                     </p>
                 </div>
     
-            </div>
+          
         </div>
 
     </div>
