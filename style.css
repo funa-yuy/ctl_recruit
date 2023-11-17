@@ -16,12 +16,10 @@ body{
   font: 1vw; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=14px*/
   line-height: 30px; /*行間指定*/
   letter-spacing: 0em;/*字間指定*/
-  background-size: 100% auto,auto ;
 }
 main{
-  align-items:center ;
+  align-items: center ;
   margin: 0 auto;/*コンテンツ部分を真ん中に持ってくるための指定。widthを指定した上で、margin:0 auto を指定する。bodyには指定しない。意味ないから*/
-
 }
 
 img {vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
@@ -41,7 +39,6 @@ div{
 }
 
 /*↑↑ここまで固定↑↑*/
-
 
 
 a {
@@ -64,8 +61,6 @@ a {
   right: 0;
   z-index: 999;
 }
-
-
 
 
 
@@ -244,39 +239,12 @@ a {
 
 
 
-/* メインビジュ*/
-.mainvisual{
-  position: relative;
-}
-.mainvisual img{
-  margin-top: 60px;
-  width: 100%;
-  height: auto;
-  z-index: 100;
-
-}
-
-@media screen and (min-width: 800px) {
-  .sp {
-    display: none;
-  }
-}
-@media screen and (max-width: 799px) {
-  .pc {
-    display: none;
-  }
-}
-
-
-
-
 /*フッター*/
 .footer{
   text-align: center;
   background-color: #ffffff;
   color: #000;
 }
-
 
 .footer div {
   margin: auto;
@@ -293,31 +261,6 @@ width: 300px;
 padding: 80px 0 30px 0;
 }
 
-.sns  {
-    display: flex;
-    justify-content: space-between;
-  width: 100%;
-  padding-top: 20px;
-  }
-
-  .csfes li {  
-    width: calc(100% * (700 / 1080)) ; 
- 
-  }
-
-  .zokei li {  width: calc(100% * (550 / 1080)) ; 
-  
-  }
-
-  .zokei{
-    padding-top: 30px;
-  }
-  
-.kao{
-  width: 100px;
-  height: auto;
-  padding-bottom: 30px;
-}
 
 .copyright{
   align-items: flex-end;
@@ -331,14 +274,28 @@ padding: 80px 0 30px 0;
 
 
 
-/*CTL コンテンツ*/
+/*CTL*/
 
 /*新卒メインビジュ*/
 .new-main-visual{
-  height: 798px;
-  width: auto;
-  background-color: #33AFB2;
-  margin-top: 68px;
+  position: relative;
+}
+.new-main-visual__img{
+  height: auto;
+  width: 100%;
+   margin-top: 68px;
+}
+
+
+@media screen and (max-width: 1600px) {
+  .new-main-visual__img {
+    width: 1600px;
+  }
+  .button-new-mid{
+    width: 1600px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 /*新卒中途ボタン*/
@@ -371,12 +328,15 @@ padding: 80px 0 30px 0;
 
 /*コンテンツ*/
 .container{
-  width: 1200px;
-  margin: auto;
+  /* margin: 0 auto; */
+  width: 1600px;
+  padding: 0 200px;
+  margin: 0 auto;
 }
+.cont-inner{
+  background-color: #F5F5F5;
 
-
-
+}
 /*見出し*/
 
 .cont-heading h3{
@@ -387,6 +347,7 @@ padding: 80px 0 30px 0;
   line-height: 36px; /* 75% */
   padding: 140px 0px 50px 0;
 }
+
 .cont-heading{
   text-align: center;
   padding-bottom: 50px;
@@ -402,13 +363,38 @@ padding: 80px 0 30px 0;
 
 /*entry*/
 .entry{
-  width: 1600px;
   height: 566px;
   background-image: url(images/entry-bk.png);
-  background-size:  auto;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
+.entry-form_txt{
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px; /* 112.5% */
+padding: 190px 0 60px 0;
+}
+
+.entry-form-button__txt{
+  color: #FFF;
+font-size: 20px;
+font-weight: 600;
+}
+
+.form-button{
+  margin: 0 auto;
+  width: 363px;
+  height: 90px;
+  display: flex;
+justify-content: center;
+align-items: center;
+  border-radius: 80px;
+background: linear-gradient(96deg, #92CE56 7.32%, #13CFDB 83.98%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 /*トップメッセージ*/
 
 .top-msg{
@@ -416,6 +402,8 @@ padding: 80px 0 30px 0;
   align-items: center;
   justify-content: flex-end;
   padding: 140px 0;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .top-msg__txt {
@@ -464,7 +452,7 @@ padding-bottom: 140px;
   text-align: center;
 }
 
-.ceo-msg__photo{
+.ceo-msg__photo-img{
   width: 506px;
   height: 453px;
 }
@@ -507,11 +495,28 @@ height: 388px;
   width: 580px;
 }
 
+.biz-about-item__desc{
+  padding-top: 15px;
+}
+
+
+/*詳しく見るボタン*/
+
+.cont-button{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.cont-button p{
+  padding-left: 10px;
+  color: #4ECF9E;
+  font-weight: 600;
+}
+
+
 
 /*デザインの種類*/
-.design-types{
-  padding-bottom: 80px;
-}
 
 .design-types__des{
  padding: 32px;
@@ -525,6 +530,10 @@ height: 388px;
 
 .design-types-item{
   padding-bottom: 80px;
+}
+.design-types-item__photo-img{
+  width: 581px;
+height: 313px;
 }
 
 .design-types-item-txt {
@@ -553,4 +562,42 @@ height: 388px;
   background: #7EBE4C;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+.design-types , .intern{ 
+  padding-bottom: 80px;
+}
+
+/*募集要項*/
+.recruitment{
+  padding-bottom: 119px;
+}
+.recruitment-m-table th, .recruitment-m-table td{
+  border-bottom: 1px solid #000;
+  line-height: 36px; /* 225% */
+  height: 100px;
+}
+
+.recruitment-m-table th{
+  font-weight: 600;
+  width: 224px;
+  padding: 18px 0px;
+}
+.recruitment-m-table td{
+  width: 900px;
+  padding: 18px 80px;
+}
+
+
+/*インターンシップ*/
+.intern__photo-img{
+  padding-top: 10px;
+  width: 1203px;
+height: 430px;
+}
+.intern-txt__decs{
+  padding: 15px 0 60px 0;
+}
+.intern-txt{
+  padding-bottom: 73px;
 }
