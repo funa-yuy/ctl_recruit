@@ -482,6 +482,10 @@ font-size: 32px;
 line-height: 60px; /* 187.5% */
 }
 
+.ceo-msg__marker-borde{
+  background: linear-gradient(transparent 60% ,#A6DF6E 0%);
+}
+
 .ceo-msg__txt-desc{
 font-size: 16px;
 line-height: 40px; /* 250% */
