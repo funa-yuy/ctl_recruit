@@ -585,6 +585,10 @@ height: 313px;
 .recruitment{
   padding-bottom: 119px;
 }
+
+.recruitment-m-table{
+  border-collapse: collapse;
+}
 .recruitment-m-table th, .recruitment-m-table td{
   border-bottom: 1px solid #000;
   line-height: 36px; /* 225% */
