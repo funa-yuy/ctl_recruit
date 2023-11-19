@@ -18,4 +18,3 @@ document.getElementById('js-hamburger').addEventListener('click',function() {
  document.getElementById('rink').addEventListener('click',function() {
   document.getElementById('js-nav').classList.remove('active');
  });
-
