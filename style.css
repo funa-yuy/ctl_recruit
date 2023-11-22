@@ -23,6 +23,8 @@ main{
 }
 
 img {vertical-align: bottom; /*画像の上下方向の隙間を無くすために指定*/
+  width: 100%;
+  height: auto;
 } 
 
 li{
@@ -80,6 +82,10 @@ a {
     height: 57px;
 }
 
+.header__logo img{
+  width: 190px;
+    height: 57px;
+}
 
 .header__logo:hover {
   opacity: 0.8;
@@ -92,7 +98,7 @@ a {
   position: absolute;
   right: 0;
   left: 0;
-  top: 68px;
+  top: 67px;
   width: 100%;
   height: 380px;
   transform: translateX(100%);
@@ -298,17 +304,7 @@ padding: 60px 0 80px 0 ;
 }
 
 
-@media screen and (max-width: 1600px) {
-  .new-main-visual__img , .entry , .cont-inner {
-    width: 1600px;
 
-  }
-  .button-new-mid{
-    width: 1600px;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
 
 /*新卒中途ボタン*/
 .button-new-mid{
@@ -348,31 +344,33 @@ padding: 60px 0 80px 0 ;
 
 /*コンテンツ*/
 .container{
-  /* margin: 0 auto; */
-  width: 1600px;
-  padding: 0 200px;
+  max-width: 1200px;
   margin: 0 auto;
+  width: calc(100% - 40px);
 }
 .cont-inner{
   background-color: #F5F5F5;
 
 }
 /*見出し*/
+.cont-heading{
+  text-align: center;
+  padding-bottom: 50px;
+ 
+}
 
 .cont-heading h3{
   color:  #7EBE4C;
   font-size: 48px;
   font-style: normal;
-  font-weight: 600;
   line-height: 36px; /* 75% */
   padding: 140px 0px 50px 0;
 }
 
-.cont-heading{
-  text-align: center;
-  padding-bottom: 50px;
+.cont-heading__line{
+   width: 525px;
+height: 18px;
 }
-
 
 /*緑線の見出し*/
 .item__title{
@@ -470,16 +468,18 @@ padding-bottom: 140px;
 
 .ceo-msg__photo{
   text-align: center;
+  width: 506px;
+  height: 493px;
+  padding-right: 30px;
 }
 
 .ceo-msg__photo-img{
-  width: 506px;
-  height: 453px;
+  width: 100%;
+  height: auto;
 }
 
 .ceo-msg__photo-text{
 padding-top: 10px;
-font-size: 20px;
 }
 
 
@@ -510,7 +510,8 @@ align-items: flex-start;
 justify-content: space-between;
 padding-bottom: 80px;
 }
-.biz-about-item-photo__img{
+.biz-about-item-photo{
+padding-right: 30px;
 width: 580px;
 height: 388px;
 }
@@ -527,11 +528,17 @@ height: 388px;
 /*詳しく見るボタン*/
 
 .cont-button{
-  padding: 10px 0;
+  padding: 10px;
+  width: 146px;
+  height: 55px;
   display: flex;
   align-items: center;
 }
 
+.cont-button-circle{
+  width: 35px;
+  height: 35px;
+}
 .cont-button p{
   padding-left: 10px;
   color: #4ECF9E;
@@ -554,14 +561,21 @@ height: 388px;
 
 .design-types-item{
   padding-bottom: 80px;
+  width: 48%;
+  height: auto;
 }
-.design-types-item__photo-img{
+
+
+.design-types-item__photo{
   width: 581px;
 height: 313px;
 }
+.design-types-item__photo-img{
+  width: 100%;
+height: auto;
+}
 
 .design-types-item-txt {
-  width: 580px;
   align-items: flex-start;
   padding: 32px 18px 32px 18px;
 }
