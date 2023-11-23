@@ -420,13 +420,13 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   align-items: center;
   justify-content: flex-end;
   padding: 140px 0;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
 .top-msg__txt {
 width: 849px;
-padding: 0px 0px 0px 60px;
+padding: 0px 0px 0px 20px;
 }
 
 
@@ -632,11 +632,18 @@ height: auto;
 
 
 /*インターンシップ*/
-.intern__photo-img{
+.intern-photo{
   padding-top: 10px;
-  width: 1203px;
-height: 430px;
+ max-width: 1203px;
+  max-height: 430px;
+  
 }
+
+.intern-photo__img{
+width: 100%;
+  height: auto;
+}
+
 .intern-txt__decs{
   padding: 15px 0 60px 0;
 }
