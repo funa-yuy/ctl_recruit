@@ -413,6 +413,8 @@ align-items: center;
 background: linear-gradient(96deg, #92CE56 7.32%, #13CFDB 83.98%);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+
 /*トップメッセージ*/
 
 .top-msg{
@@ -425,32 +427,31 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .top-msg__txt {
-width: 849px;
 padding: 0px 0px 0px 20px;
 }
 
 
 .top-msg__txt h2{
-font-size: 48px;
-line-height: 75px; /* 156.25% */
-letter-spacing: 2.4px;
+font-size: clamp(32px, 3vw, 48px);
+line-height: 156.25%;
+letter-spacing: 0.15rem;
 }
 
 .top-msg__txt p{
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 60px; /* 250% */
-  padding: 30px 47px 50px 0px;
+  font-size: clamp(16px, 1.5vw, 24px);
+  line-height: 250%;
+  padding: 30px 40px 50px 0px;
   }
 
 .top-msg__txt h3{
-font-size: 30px;
-font-weight: 600;
-line-height: 60px; /* 200% */
+font-size: clamp(20px, 1.875vw, 30px);
+line-height: 200%;
   }
 
-
+.top-msg__photo{
+  width: 38.2%;
+  height: auto;
+}
 .top-msg__photo-img{
   width: 100%;
   height: auto;
@@ -480,6 +481,7 @@ padding-bottom: 140px;
 
 .ceo-msg__photo-text{
 padding-top: 10px;
+font-size: 14px;
 }
 
 
@@ -490,7 +492,7 @@ padding-top: 10px;
 .ceo-msg__text-keymsg{
   padding-bottom: 25px;
 font-size: 32px;
-line-height: 60px; /* 187.5% */
+line-height:187.5% ;
 }
 
 .ceo-msg__marker-borde{
@@ -499,7 +501,7 @@ line-height: 60px; /* 187.5% */
 
 .ceo-msg__txt-desc{
 font-size: 16px;
-line-height: 40px; /* 250% */
+line-height: 250%;
 }
 
 
@@ -616,7 +618,7 @@ height: auto;
 }
 .recruitment-m-table th, .recruitment-m-table td{
   border-bottom: 1px solid #000;
-  line-height: 36px; /* 225% */
+  line-height:  225% ;
   height: 100px;
 }
 
