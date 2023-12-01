@@ -280,7 +280,6 @@ padding: 60px 0 80px 0 ;
     width: 100%;
     display: block;
     text-align: center;
-    margin-bottom: 12px;
 }
 
 .copyright{
@@ -447,16 +446,23 @@ padding: 60px 0 80px 0 ;
 padding: 190px 0 60px 0;
 }
 
+.form-button__inner{
+  margin: 0 auto;
+  max-width: 363px;
+}
+
+
 .entry-form-button__txt{
   color: #FFF;
 font-size: 20px;
 font-weight: 600;
+padding:30px  90px ;
 }
 
 .form-button{
   margin: 0 auto;
-  width: 363px;
-  height: 90px;
+  width: 100%;
+  height: auto;
   display: flex;
 justify-content: center;
 align-items: center;
@@ -465,6 +471,39 @@ background: linear-gradient(96deg, #92CE56 7.32%, #13CFDB 83.98%);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+
+@media screen and (max-width: 899px){
+  .entry{
+    height: initial;
+    background-image: url(images/entry-bk-sp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .entry-form{
+    padding: 90px 20px;
+  }
+  .entry-form_txt{
+    font-size: 20px;
+    line-height: 112.5%;
+  padding: 0px 0 40px 0;
+  }
+
+  .form-button__inner{
+   max-width: 250px;
+  }
+
+  .entry-form-button__txt{
+  font-size: 18px;
+  padding:15px 0px ;
+  }
+  
+
+}
+
+  
 
 /*トップメッセージ*/
 
@@ -651,6 +690,7 @@ line-height: 250%;
   
     }
  }
+
 /*事業案内*/
 .biz-about-item{
   display: flex;
@@ -664,6 +704,11 @@ width: 580px;
 height: 388px;
 }
 
+.biz-about-item-photo__img{
+  width: 100%;
+  height: auto;
+}
+
 .biz-about-item-txt{
   width: 580px;
 }
@@ -671,7 +716,6 @@ height: 388px;
 .biz-about-item__desc{
   padding-top: 15px;
 }
-
 
 
 /*デザインの種類*/
@@ -697,6 +741,7 @@ height: 388px;
   width: 581px;
 height: 313px;
 }
+
 .design-types-item__photo-img{
   width: 100%;
 height: auto;
@@ -733,6 +778,46 @@ height: auto;
   padding-bottom: 80px;
 }
 
+/*SP設定　事業案内とデザインの種類*/
+@media screen and (max-width: 899px) {
+  .biz-about-item-txt{
+    padding-top: 20px;
+    width: inherit;
+  }
+  .biz-about-item-photo{
+    width: 100%;
+  height: auto;
+    padding-right: initial;
+    }
+
+.design-types__des{
+  padding: initial;
+  padding-bottom: 60px;
+ }
+ 
+ .biz-about-item , .design-types-list{
+  display:block;
+  justify-content: center;
+ }
+
+ .design-types-item{
+  padding-bottom: 80px;
+  width: 100%;
+  height: auto;
+}
+ 
+.design-types-item-txt {
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.biz-about-item__desc ,.design-types-item__desc{
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+}
+
 /*募集要項*/
 .recruitment{
   padding-bottom: 119px;
@@ -758,16 +843,30 @@ height: auto;
 }
 
 
+@media screen and (max-width: 899px) {
+
+  .recruitment-m-table th{
+    font-weight: 600;
+    padding: 18px 20px;
+    font-size: 14px;
+  }
+  .recruitment-m-table td{
+    width: 900px;
+    padding: 18px 20px;
+    font-size: 14px;
+  }
+
+  }
+  
 /*インターンシップ*/
 .intern-photo{
   padding-top: 10px;
  max-width: 1203px;
   max-height: 430px;
-  
 }
 
 .intern-photo__img{
-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -777,3 +876,14 @@ width: 100%;
 .intern-txt{
   padding-bottom: 73px;
 }
+
+@media screen and (max-width: 899px) {
+
+  .intern-txt__decs{
+    font-size: 14px;
+  }
+  .intern-txt__decs{
+    padding: 15px 0 30px 0;
+  }
+
+  }
