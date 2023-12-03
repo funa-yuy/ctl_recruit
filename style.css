@@ -7,13 +7,19 @@ html{
   color: #010101;
 }
 
+@media screen and (max-width: 899px){
+  html{
+    font-size: 14px;
+  }
+}
+
 *{  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body{
-  font: 1vw; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=14px*/
+  font: 1vw; /*HTMLタグで適用した文字サイズクを基準とした比率で文字サイズを設定する。この場合、1rem=16px*/
   line-height: 30px; /*行間指定*/
   letter-spacing: 0em;/*字間指定*/
 }
@@ -46,10 +52,6 @@ div{
 a {
   text-decoration: none;
 }
-
-
-
-
 
 /* ヘッダー */
 
@@ -100,7 +102,7 @@ a {
   left: 0;
   top: 67px;
   width: 100%;
-  height: 380px;
+  height: 320px;
   transform: translateX(100%);
   background-color: #fff;
   transition: ease .4s;
@@ -180,11 +182,12 @@ a {
 
 /* ナビのリンク */
 .nav-items__item a {
-  color: black;
+  color: #010101;
   width: 100%;
   display: block;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  font-size: 16px;
 }
 
 .nav-items__item:last-child a {
@@ -275,8 +278,18 @@ a {
 padding: 60px 0 80px 0 ;
 }
 
+.fotter__nav-items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fotter-nav-item{
+padding: 6px 20px;
+}
+
 .fotter-nav-item a {
-    color: black;
+  color: #010101;
     width: 100%;
     display: block;
     text-align: center;
@@ -286,7 +299,16 @@ padding: 60px 0 80px 0 ;
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 899px){
+  .footer__nav  {
+  padding: 30px 0 30px 0 ;
+  }
 
+  .copyright{
+    padding-bottom: 30px;
+    font-size: 12px;
+  }
+}
 
 
 
@@ -303,7 +325,7 @@ padding: 60px 0 80px 0 ;
 }
 
 
-
+/*↓↓↓↓↓共通↓↓↓↓*/
 
 /*新卒中途ボタン*/
 .button-new-mid{
@@ -323,7 +345,6 @@ padding: 60px 0 80px 0 ;
   vertical-align: middle;
   text-align: center;
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
 }
 
@@ -340,6 +361,29 @@ padding: 60px 0 80px 0 ;
   color: #FFF;
 }
 
+@media screen and (max-width: 899px){
+  .button-new-mid{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .button-new , .button-mid{
+    display: table;
+    width: 100%;
+   height: 50px;
+   position: relative;
+  }
+  
+  .button-new-mid p{
+    font-size: 20px;
+  }
+  
+  .button__triangle{
+    width: 15px;
+    height: 15px;
+  }
+  
+}
 
 /*コンテンツ*/
 .container{
@@ -393,14 +437,19 @@ padding: 60px 0 80px 0 ;
  }
 }
 
-/*共通*/
-
 /*緑線の見出し*/
 .item__title{
   padding-left: 16px;
   border-left: 8px solid #7FCA34;
+  font-size: 24px;
 }
 
+@media screen and (max-width: 899px) {
+  .item__title{
+    font-size: 18px;
+  }
+
+}
 /*詳しく見るボタン*/
 
 .cont-button{
@@ -421,7 +470,6 @@ padding: 60px 0 80px 0 ;
   font-weight: 600;
 }
 
-/*SP版*/
 @media screen and (max-width: 899px) {
   .sp-none-br{
     display: none;
@@ -487,7 +535,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
   .entry-form_txt{
     font-size: 20px;
-    line-height: 112.5%;
+    line-height: 140%;
   padding: 0px 0 40px 0;
   }
 
@@ -500,7 +548,6 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding:15px 0px ;
   }
   
-
 }
 
   
@@ -813,7 +860,6 @@ height: auto;
 
 .biz-about-item__desc ,.design-types-item__desc{
   padding-top: 15px;
-  font-size: 14px;
 }
 
 }
@@ -848,12 +894,10 @@ height: auto;
   .recruitment-m-table th{
     font-weight: 600;
     padding: 18px 20px;
-    font-size: 14px;
   }
   .recruitment-m-table td{
     width: 900px;
     padding: 18px 20px;
-    font-size: 14px;
   }
 
   }
@@ -878,10 +922,6 @@ height: auto;
 }
 
 @media screen and (max-width: 899px) {
-
-  .intern-txt__decs{
-    font-size: 14px;
-  }
   .intern-txt__decs{
     padding: 15px 0 30px 0;
   }
