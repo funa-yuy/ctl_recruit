@@ -57,7 +57,7 @@ a {
 
 
 .header {
-  background-color: white;
+  background: linear-gradient(90deg, #A6DF6E 0%, #4ECF9E 50%);
   width: 100%;
   height: 68px;
   position: fixed;
@@ -69,7 +69,9 @@ a {
 
 
 .header-inner {
-  padding: 0 20px;
+  max-width: 1600px;
+  padding: 0 40px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -81,12 +83,12 @@ a {
 /* ヘッダーのロゴ部分 */
 .header__logo {
   width: 190px;
-    height: 57px;
+  height: 57px;
 }
 
 .header__logo img{
   width: 190px;
-    height: 57px;
+  height: 57px;
 }
 
 .header__logo:hover {
@@ -97,6 +99,7 @@ a {
 /* ヘッダーのナビ部分 */
 
 .header__nav {
+  padding-left: 20px;
   position: absolute;
   right: 0;
   left: 0;
@@ -455,90 +458,12 @@ padding: 6px 20px;
   }
 
 }
+
+
 /*詳しく見るボタン*/
-
-.cont-button{
-  padding: 10px;
-  width: 146px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-}
-
-.cont-button-circle{
-  width: 35px;
-  height: 35px;
-}
-.cont-button p{
-  padding-left: 10px;
-  color: #4ECF9E;
-  font-weight: 600;
-}
-
-@media screen and (max-width: 899px) {
-  .sp-none-br{
-    display: none;
-  }
-}
-
-.screen {
-  display: flex;
-  width: 146px;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  position: relative;
-}
-
-.screen .frame {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 2px 11px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-left: -4.52px;
-  margin-right: -4.52px;
-  border-radius: 80px;
-  box-shadow: 0px 4px 4px #00000040;
-  background: linear-gradient(180deg, rgb(146.01, 206.13, 85.89) 0%, rgb(19, 207, 219) 100%);
-}
-
-.screen .vector {
-  position: relative;
-  width: 15.03px;
-  height: 13.5px;
-  margin-left: -1px;
-}
-
-.screen .text-wrapper {
-  position: relative;
-  width: fit-content;
-  margin-top: -1px;
-  font-family: "Hiragino Kaku Gothic ProN-W6", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 30px;
-  white-space: nowrap;
-}
-
-
-.btn:hover {
-animation-timing-function: cubic-bezier(0.45, 1.45, 0.8, 1);
-animation-duration: 300ms;
-}
-
 
 /*丸がボタンに変形する*/
 
-.btntransform{
-  display: flex;
-  align-items: center;
-}
 .btntransform p{
   position: relative;
  left:30px;
@@ -547,16 +472,20 @@ animation-duration: 300ms;
   z-index: 1;
 }
 
-.yazirusi-2{
+.cont-button-arrow{
   position:relative; 
   left: 10px;
+  width: 16px;
+  height: 14px;
 }
 
 .btntransform{
+  display: flex;
+  align-items: center;
+  width:135px;
   /*丸の基点とするためrelativeを指定*/
   position: relative;
   /*ボタンの形状*/  
-  color:linear-gradient(96deg, #92CE56 7.32%, #13CFDB 83.98%);
   text-decoration: none;
   outline: none;
 }
@@ -575,7 +504,8 @@ animation-duration: 300ms;
   border-radius:25px;
   box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
     /*アニメーションの指定*/
-    transition:.2s ease-out;
+    transition:300ms cubic-bezier(0.45, 1.45, 0.8, 1);
+
 }
 
 /*hoverした際の形状*/
@@ -595,8 +525,9 @@ animation-duration: 300ms;
 	80% { transform: scale(.98); }
 }
 */
-.btntransform p:hover{
-    color: #fff;
+
+.btntransform:hover.btntransform p{
+   color: #fff;
 }
 
 
@@ -681,15 +612,13 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 .top-msg{
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 140px 0;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .top-msg__txt {
-  z-index: 10;
-padding: 0px 0px 0px 20px;
+  padding: 140px 0px 140px 40px;
+  width: 50%;
 }
 
 
@@ -711,13 +640,12 @@ line-height: 200%;
   }
 
 .top-msg__photo{
-  width: 38.2%;
-  height: auto;
+  width: 50%;
 }
 .top-msg__photo-img{
+  object-fit: cover;
   width: 100%;
-  height: auto;
-  box-shadow: 22px 21px 0  #7FCA34;
+  height: 100%;
   
 }
 
@@ -734,6 +662,8 @@ line-height: 200%;
   }
   
   .top-msg__txt {
+    z-index: 10;
+    width: initial;
   padding: 120% 20px 60px 20px;
   }
   
