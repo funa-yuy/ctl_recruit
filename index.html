@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTL採用ページ　新卒</title>
     <link rel="stylesheet" href="style.css">
-    <!--タブアイコン
-    <link rel="icon" href="images/logo.png">
-   -->
+
+    <link rel="icon" href="images/favicon.png">
+
 
     <!-- 共有時の画像など設定
       <meta property="og:url" content="http://zokei-csf.com/2023csfes/">
@@ -24,7 +24,7 @@
 <body>
 <!--ヘッダー-->  
 
-<header class="header">
+<header class="header ">
     <div class="header-inner">
   
       <div class="header__logo header-logo">
@@ -35,12 +35,12 @@
 
       <nav class="header__nav nav" id="js-nav">
         <ul class="nav__items nav-items" id="rink">
-          <li class="nav-items__item" ><a href="#">about</a></li>
-          <li class="nav-items__item" ><a href="#">サービスライン</a></li>
-          <li class="nav-items__item" ><a href="#">プロダクト</a></li>
-          <li class="nav-items__item"  ><a href="#">Labo</a></li>
-          <li class="nav-items__item"  ><a href="#">アイディアソン•ハッカソン</a></li>
-          <li class="nav-items__item" ><a href="#">採用情報</a></li>
+          <li class="nav-items__item" ><a href="#">TOP</a></li>
+          <li class="nav-items__item" ><a href="#ceo-msg">代表からのメッセージ</a></li>
+          <li class="nav-items__item" ><a href="#biz-about">事業内容</a></li>
+          <li class="nav-items__item"  ><a href="#design-types">デザインの役割</a></li>
+          <li class="nav-items__item"  ><a href="#recruitment">募集要項</a></li>
+          <li class="nav-items__item" ><a href="#intern">インターンシップ</a></li>
         </ul>
       </nav>
     
@@ -84,18 +84,28 @@
 <div class="button-new-mid">
     <a href="#" target="_blank" class="button-new">
        <p>新卒向け</p>
-       <img src="images/button-new_triangle.svg" class="button-new__triangle button__triangle" alt="">
+       <svg class="button__vector button-new__vector" xmlns="http://www.w3.org/2000/svg" width="39" height="19" viewBox="0 0 39 19" fill="none">
+        <path d="M20 18.5L0 0H39L20 18.5Z" fill="#7FCA34"/>
+      </svg>
     </a> 
 
     <a href="#" target="_blank" class="button-mid">
        <p>中途向け</p>
-       <img src="images/button-mid_triangle.svg" class="button-mid__triangle button__triangle" alt="">
+       <!---
+       <svg class="button__vector button-mid__vector" xmlns="http://www.w3.org/2000/svg" width="39" height="19" viewBox="0 0 39 19" fill="none">
+        <path d="M20 18.5L0 0H39L20 18.5Z" fill="#D9D9D9"/>-->
+      </svg>
     </a>
 </div>
 
 
 <!--トップメッセージ-->
     <div class="top-msg">
+
+        <div class="top_msg_path">
+            <img src="images/top_msg_path-1.svg" alt="" class="top_msg_path-1">
+            <img src="images/top_msg_path-2.svg" alt="" class="top_msg_path-2">
+        </div>
 
         <div class="top-msg__photo">
             <img src="images/top_msg.png" alt="" class="top-msg__photo-img">
@@ -126,7 +136,7 @@
     </div>
 
 <!--代表からのメッセージ--> 
-<div class="ceo-msg container">
+<div id="ceo-msg" class="ceo-msg container">
 
         <div class="ceo-msg__cont-heading cont-heading">
             <h3>代表からのメッセージ</h3>
@@ -160,7 +170,7 @@
 </div>
 
 <!--事業内容--> 
-<div class="biz-about-inner bk-gray">
+<div id="biz-about" class="biz-about-inner bk-gray">
 <div class="biz-about container">
 
         <div class="cont-heading biz-about__cont-heading">
@@ -272,7 +282,7 @@
 </div>
 
 <!--デザインの種類--> 
-<div class="design-types container">
+<div id="design-types" class="design-types container">
 
      <div class="design-types__cont-heading cont-heading">
         <h3>デザインの役割</h3>
@@ -389,7 +399,7 @@
 </div>
 
 <!--募集要項--> 
-<div class="recruitment-inner bk-gray">
+<div id="recruitment" class="recruitment-inner bk-gray">
 <div class="recruitment container">
     <div class="recruitment__cont-heading cont-heading">
         <h3>募集要項</h3>
@@ -463,12 +473,13 @@
             </tr>
             </tbody>
     </table>
+  
 
 </div>
 </div>
 
 <!--インターンシップ--> 
-<div class="intern container">
+<div id="intern" class="intern container">
     <div class="intern__cont-heading cont-heading">
         <h3>インターンシップ</h3>
         <img src="images/cont-heading__line.svg" alt="" class="cont-heading__line">
@@ -511,10 +522,15 @@
 <!--エントリーはこちら--> 
 <div class="entry">
 
+    <div class="entry_path">
+        <img src="images/top_msg_path-1.svg" alt="" class="entry_path-1">
+        <img src="images/top_msg_path-2.svg" alt="" class="entry_path-2">
+    </div>
+
     <div class="entry-form">
         <p class="entry-form_txt">シビックテック・ラボで、チャレンジしませんか？</p>
 
-        <div class="form-button__inner">
+    <div class="form-button__inner">
         <div class="entry-form__button form-button">
             <a href="#" target="_blank" class="entry-form-button__txt">エントリーはこちら</a>
         </div>
@@ -527,13 +543,13 @@
 <footer class="footer">
 
     <nav class="footer__nav nav" >
-        <ul class="nav__items fotter__nav-items">
-          <li class="fotter-nav-item" ><a href="#">about</a></li>
-          <li class="fotter-nav-item" ><a href="#">サービスライン</a></li>
-          <li class="fotter-nav-item" ><a href="#">プロダクト</a></li>
-          <li class="fotter-nav-item"  ><a href="#">Labo</a></li>
-          <li class="fotter-nav-item"  ><a href="#">アイディアソン•ハッカソン</a></li>
-          <li class="fotter-nav-item" ><a href="#">採用情報</a></li>
+        <ul class="nav__items footer__nav-items">
+          <li class="footer-nav-item" ><a href="#">ABOUT</a></li>
+          <li class="footer-nav-item" ><a href="#">SERVICE</a></li>
+          <li class="footer-nav-item" ><a href="#">PRODUCT</a></li>
+          <li class="footer-nav-item"  ><a href="#">PRODUCT</a></li>
+          <li class="footer-nav-item"  ><a href="#">アイディアソン•ハッカソン</a></li>
+          <li class="footer-nav-item" ><a href="#">採用情報</a></li>
         </ul>
     </nav>
       
