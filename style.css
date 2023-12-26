@@ -53,6 +53,88 @@ a {
   text-decoration: none;
 }
 
+
+/*オープニングアニメーション*/
+.shutter{
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  background-color:#fff;
+  z-index:999;
+  -webkit-animation: byeShutter 2.7s forwards;
+  animation: byeShutter 2.7s forwards;
+}
+
+.logo-layer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+  background-color:#fff;
+  z-index:1000;
+  -webkit-animation: logo-layer 1s forwards ease;
+  animation: logo-layer 1s forwards ease;
+}
+
+.shutter-logo {
+  position: absolute;
+  width: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: shutter-logo 1.4s forwards;
+  animation: shutter-logo 1.4s forwards;
+  animation-delay: 1.6s;
+}
+@keyframes byeShutter {
+70% {
+  opacity: 1;
+}
+100% {
+  display: none;
+  opacity: 0;
+}
+}
+
+@keyframes logo-layer {
+0% {
+  width: 100%;
+  left:0%;
+}
+
+100% {
+  width: 100%;
+  left: 100%;
+}
+}
+
+@keyframes shutter-logo {
+0% {
+  opacity: 1;
+}
+  
+70% {transform: scale(1.2);
+     
+}
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+
+
+
 /* ヘッダー */
 
 
@@ -64,7 +146,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 90;
 }
 
 
