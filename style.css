@@ -98,13 +98,21 @@ a {
   animation-delay: 1.6s;
 }
 @keyframes byeShutter {
-70% {
+60% {
   opacity: 1;
 }
-100% {
+
+90% {
   display: none;
   opacity: 0;
 }
+100% {
+  z-index: -1;
+  display: none;
+  opacity: 0;
+}
+
+
 }
 
 @keyframes logo-layer {
@@ -113,9 +121,14 @@ a {
   left:0%;
 }
 
+90% {
+  width: 100%;
+  left: 100%;
+}
 100% {
   width: 100%;
   left: 100%;
+  display: none;
 }
 }
 
@@ -124,9 +137,13 @@ a {
   opacity: 1;
 }
   
-70% {transform: scale(1.2);
+60% {transform: scale(1.2);
      
 }
+  90% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
   100% {
     opacity: 0;
     transform: scale(1.2);
