@@ -429,13 +429,16 @@ font-size: 10px;
 /*新卒中途ボタン*/
 .button-new-mid{
   display: flex;
+  justify-content: stretch;
 }
 
 .button-new , .button-mid{
-  display: table;
-  width: 100%;
- height: 90px;
- position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90px;
+  position: relative;
 }
 
 .button-new-mid p{
@@ -464,10 +467,6 @@ font-size: 10px;
 
 
 @media screen and (max-width: 899px){
-  .button-new-mid{
-    display: flex;
-    justify-content: flex-end;
-  }
   
   .button-new , .button-mid{
    height: 50px;
@@ -481,7 +480,12 @@ font-size: 10px;
     width: 15px;
     height: 15px;
   }
-  
+  .button__vector{
+    left: 46%;
+    width: auto;
+    height: 15px;
+    bottom: -15px;
+  }
 }
 
 /*コンテンツ*/
