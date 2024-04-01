@@ -5,5 +5,7 @@
 https://civictech-lab.jp/recruit/
 
 使用言語：HTML、CSS
+
 使用ソフト・ツール：Visual Studio Code、GitHub、Figma、Illustrator
+
 制作期間：7ヶ月
